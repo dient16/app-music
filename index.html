@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="app-music">
+        <div class="music">
+            <div class="music__thumb">
+                <img src="https://images.unsplash.com/photo-1581888517319-570283943d82?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8dm9sY2Fub3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+            <div class="music-category">
+                <ion-icon name="logo-buffer"></ion-icon>
+            </div>
+            <div class="music__song-info">
+                <h3 class="music__name">Beautiful inw white</h3>
+                <h4 class="music__author"></h4>
+            </div>
+            <audio src="./assets/music/phaohong.mp3" id="song"></audio>
+            <input type="range" name="range" id="range" class="range">
+            <div class="music__timer">
+                <div class="duration">2:10</div>
+                <div class="remaining">-3:10</div>
+            </div>
+            <div class="music__control">
+                <ion-icon name="infinite-outline" class="infinite-icon"></ion-icon>
+                <ion-icon name="play-skip-back" class="music-back"></ion-icon>
+                <div class="music-play">
+                    <div class="play__inner">
+                        <ion-icon name="play" class="play__icon"></ion-icon>
+                    </div>
+                </div>
+                <ion-icon name="play-skip-forward" class="music-forward"></ion-icon>
+                <ion-icon name="repeat-outline" class="repeat-icon"></ion-icon>    
+            </div>
+            <div class="volume">
+                <div class="volume-icon">
+                    <ion-icon name="volume-high-outline"></ion-icon>
+                </div>
+                <input type="range" name="range" id="range" class="range-volume">
+            </div>
+            <div class="wave">
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+            </div>  
+        </div>
+        <ul class="listmusic">
+            <li class="music-item">
+                <div class="music-item-img">
+                    <img src="./assets/img/1.jpg" alt="">
+                </div>
+                <div class="music-item-info">
+                    <h3 class="music-item-name">asdfdsf</h3>
+                    <h4 class="music-item-author">asdfsaf</h4>
+                </div>
+                <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+            </li>
+        </ul>
+    </div>
+    
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
